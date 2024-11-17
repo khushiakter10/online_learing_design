@@ -8,7 +8,7 @@ class Notifications extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           " Notifications",
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 25),
@@ -18,7 +18,7 @@ class Notifications extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -37,289 +37,26 @@ class Notifications extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     Card(
-                      elevation: 8,
+                      elevation: 4,
                       shadowColor: Colors.grey,
                       child: ListTile(
                         leading: Container(
                             decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
+                                color: const Color(0xfffacbf8),
                                borderRadius: BorderRadius.circular(10),
                                 ),
                             height: 50,
                             width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
+                            child: const Icon(Icons.save,color: Color(0xffe56116 ))
                         ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
-                          children: [
-                            Icon(
-                              Icons.watch_later,
-                              size: 15,
-                            ),
-                            SizedBox(width: 5),
-                            Text("just now"),
-                          ],
-                        ),
-                      ),
-                    ), Card(
-                      elevation: 8,
-                      shadowColor: Colors.grey,
-                      child: ListTile(
-                        leading: Container(
-                            decoration: BoxDecoration(
-                                color: Color(0xfffacbf8),
-                               borderRadius: BorderRadius.circular(10),
-                                ),
-                            height: 50,
-                            width: 50,
-                            child: Icon(Icons.save,color: Colors.green,)),
-                        title: Text("Successful"),
-                        subtitle: Row(
+                        title: const Text("Successful purchase!"),
+                        subtitle: const Row(
                           children: [
                             Icon(
                               Icons.watch_later,
@@ -331,7 +68,93 @@ class Notifications extends StatelessWidget {
                         ),
                       ),
                     ),
-
+                    const SizedBox(height: 20,),
+                    SizedBox(
+                      height: 80,
+                      child: Card(
+                        elevation: 4,
+                        shadowColor: Colors.grey,
+                        child: ListTile(
+                          leading: Container(
+                              decoration: BoxDecoration(
+                                  color: const Color(0xfffc7daee),
+                                 borderRadius: BorderRadius.circular(10),
+                                  ),
+                              height: 50,
+                              width: 50,
+                              child: const Icon(Icons.message_rounded,color:  Color(0xff0b1fcb ),)),
+                          title: const Text("Successful purchase!"),
+                          subtitle: const Row(
+                            children: [
+                              Icon(
+                                Icons.watch_later,
+                                size: 15,
+                              ),
+                              SizedBox(width: 5),
+                              Text("just now"),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20,),
+                    SizedBox(
+                      height: 80,
+                      child: Card(
+                        elevation: 4,
+                        shadowColor: Colors.grey,
+                        child: ListTile(
+                          leading: Container(
+                              decoration: BoxDecoration(
+                                  color: const Color(0xfffc7daee),
+                                 borderRadius: BorderRadius.circular(10),
+                                  ),
+                              height: 50,
+                              width: 50,
+                              child: const Icon(Icons.message_rounded,color:  Color(0xff0b1fcb ),)),
+                          title: const Text("Successful purchase!"),
+                          subtitle: const Row(
+                            children: [
+                              Icon(
+                                Icons.watch_later,
+                                size: 15,
+                              ),
+                              SizedBox(width: 5),
+                              Text("just now"),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20,),
+                    SizedBox(
+                      height: 80,
+                      child: Card(
+                        elevation: 4,
+                        shadowColor: Colors.grey,
+                        child: ListTile(
+                          leading: Container(
+                              decoration: BoxDecoration(
+                                  color: const Color(0xfffc7daee),
+                                 borderRadius: BorderRadius.circular(10),
+                                  ),
+                              height: 50,
+                              width: 50,
+                              child: const Icon(Icons.message_rounded,color: Color(0xff0b1fcb  ),)),
+                          title: const Text("Successful purchase!"),
+                          subtitle: const Row(
+                            children: [
+                              Icon(
+                                Icons.watch_later,
+                                size: 15,
+                              ),
+                              SizedBox(width: 5),
+                              Text("just now"),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
