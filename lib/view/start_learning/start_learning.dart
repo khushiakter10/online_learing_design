@@ -15,15 +15,15 @@ class StartLearning extends StatelessWidget {
            Column(
              children: [
                Image.asset("assets/images/start pic.png",height: 200,),
-               Text("Successful purchase!")
+               const Text("Successful purchase!")
              ],
            ),
          ],
        ),
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           CommonButton(buttonName: "Start learning", onTap: (){},
             buttonWidth: 300,
-            buttonColor: Color(0xff4c5ef5  ),
+            buttonColor: const Color(0xff4c5ef5  ),
           )
         ],
       ),
