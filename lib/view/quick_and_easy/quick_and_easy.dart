@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-class NumerouseFree extends StatelessWidget {
-  const NumerouseFree({super.key});
+class QuickAndEasy extends StatelessWidget {
+  const QuickAndEasy({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         actions: const [
           Text(
             "Skip",
-            style: TextStyle(color: Colors.grey, fontSize: 15),
+            style: TextStyle(color: Colors.grey, fontSize: 20),
           )
         ],
       ),
@@ -19,26 +18,26 @@ class NumerouseFree extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Image.asset("assets/images/numerouse.png")],
+            children: [Image.asset("assets/images/quick.png")],
           ),
           const SizedBox(height: 30,),
           const Text(
-            "Numerouse free",
+            "quick and easy",
             style: TextStyle(
                 color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const Text(
-            "trial courses",
+            "learning",
             style: TextStyle(
                 color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           const Text(
-            "Free courses for you to",
-            style: TextStyle(color: Colors.grey, fontSize: 15),
+            "Easy and fast learning at",
+            style: TextStyle(color: Colors.grey, fontSize: 20),
           ),
           const Text(
-            "find your way to learning",
-            style: TextStyle(color: Colors.grey, fontSize: 15),
+            "improve variouse skills",
+            style: TextStyle(color: Colors.grey, fontSize: 20),
           )
         ],
       ),
