@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:online_learing_design/view/create_your_own/create_your_own.dart';
 import 'package:online_learing_design/view/quick_and_easy/quick_and_easy.dart';
 
 void main(){
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: QuickAndEasy() ,
+      home: CreateYourOwn() ,
     );
   }
 }
