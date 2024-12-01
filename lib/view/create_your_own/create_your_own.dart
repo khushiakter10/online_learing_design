@@ -42,7 +42,7 @@ class CreateYourOwn extends StatelessWidget {
             "more motivated",
             style: TextStyle(color: Colors.grey, fontSize: 15),
           ),
-          SizedBox(height: 100,),
+          const SizedBox(height: 100,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -50,8 +50,9 @@ class CreateYourOwn extends StatelessWidget {
                buttonName: "Sign Up", onTap: (){},
                buttonWidth: 150,
                buttonHeight: 50,
-               buttonColor: Color(0xff0953b2)
+               buttonColor: const Color(0xff0953b2)
              ),
+              const SizedBox(width: 10,),
               CommonButton(buttonName: "Log in", onTap: (){},
                 buttonWidth: 150,
                 buttonHeight: 50,
