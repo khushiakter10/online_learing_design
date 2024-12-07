@@ -43,42 +43,38 @@ class Meetup extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(40)),
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 10, vertical: 10),
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("Learnedtoday"),
-                                  Text("My courses"),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    "46 min/",
-                                    style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 25),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Learnedtoday"),
+                                Text("My courses"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "46 min/",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 25),
+                                ),
+                                SizedBox(
+                                  width: 9,
+                                ),
+                                Text(
+                                  "60 min",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 15,
                                   ),
-                                  SizedBox(
-                                    width: 9,
-                                  ),
-                                  Text(
-                                    "60 min",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 15,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ],
-                          ),
+                                )
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                     ))

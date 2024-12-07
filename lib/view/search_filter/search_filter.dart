@@ -15,35 +15,51 @@ class SearchFilter extends StatelessWidget {
                 Container(
                   height: 200,
                   width: MediaQuery.sizeOf(context).width,
-                  decoration: BoxDecoration(
-                      color: Colors.lightBlue
-                  ),
+                  decoration: BoxDecoration(color: Colors.lightBlue),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 2,vertical: 170),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 1, vertical: 100),
                   child: Center(
                     child: Positioned(
-                        child: Container(
-                          height: 300,
-                          width: MediaQuery.sizeOf(context).width/1.1,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.only(topLeft: Radius.elliptical(50, 50),topRight: Radius.elliptical(50, 50))
-                          ),
+                      child: Container(
+                        height: 100,
+                        width: MediaQuery.sizeOf(context).width / 1.1,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.elliptical(50, 50),
+                                topRight: Radius.elliptical(50, 50))),
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 20, left: 20),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              Icon(Icons.add_a_photo),
+                              Center(
+                                  child: Text(
+                                "Search Filter",
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 20),
+                              )),
                               Row(
                                 children: [
-                                  Text("jhsdgldfgjk")
+                                  Text(
+                                    "Categories",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15),
+                                  )
                                 ],
-                              )
+                              ),
                             ],
                           ),
-                        )),
+                        ),
+                      ),
+                    ),
                   ),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),

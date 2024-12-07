@@ -23,10 +23,13 @@ class MyCourses extends StatelessWidget {
             height: 120,
             child: Card(
               color: Colors.white,
-              elevation: 4,
+              elevation: 1,
               shadowColor: Colors.grey.shade600,
               child: const ListTile(
-                title: Text(" Learned Today"),
+                title: Text(
+                  " Learned Today",
+                  style: TextStyle(color: Colors.grey, fontSize: 15),
+                ),
                 subtitle: Row(
                   children: [
                     Text(
@@ -39,35 +42,221 @@ class MyCourses extends StatelessWidget {
                     SizedBox(
                       width: 5,
                     ),
-                    Text("60min"),
+                    Text("60min",style: TextStyle(color: Colors.grey),),
                   ],
                 ),
               ),
             ),
           ),
-          Container(
-            height: 200,
-            width: 200,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue,),
-              borderRadius:  BorderRadius.all(Radius.circular(20))
-            ),
-            child: Padding(
-              padding: EdgeInsets.all(30),
-              child: Row(
+          Column(
+            children: [
+              Row(
                 children: [
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("hgjdhgdkj"),
-                      Text("GGGGGG")
+                      Container(
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 10),
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Color(0xfff1c2e9)),
+                          child: const Column(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "Product",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "Design V1.0",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Text(
+                                    "Completed",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "14/24",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
+                                          ),
+                                          SizedBox(
+                                            width: 15,
+                                          ),
+                                          Icon(
+                                            Icons.video_library,
+                                            color: Color(0xffe82dc6),
+                                            size: 35,
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              )
+                            ],
+                          ))
                     ],
                   ),
-
+                  Column(
+                    children: [
+                      Container(
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 10),
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Color(0xffbcedef)),
+                          child: const Column(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "Java",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "Development",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Text(
+                                    "Completed",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "12/18",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
+                                          ),
+                                          SizedBox(
+                                            width: 15,
+                                          ),
+                                          Icon(
+                                            Icons.video_library,
+                                            color: Color(0xff1562e2),
+                                            size: 35,
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              )
+                            ],
+                          ))
+                    ],
+                  ),
                 ],
               ),
-            ),
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 10),
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Color(0xffbcedef)),
+                          child: const Column(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "Product",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "Design V1.0",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(
+                                    height: 50,
+                                  ),
+                                  Text(
+                                    "Completed",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "14/24",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20),
+                                          ),
+                                          SizedBox(
+                                            width: 15,
+                                          ),
+                                          Icon(
+                                            Icons.video_library,
+                                            color: Color(0xff099786),
+                                            size: 35,
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              )
+                            ],
+                          ))
+                    ],
+                  ),
+                ],
+              ),
+            ],
           )
         ],
       ),
