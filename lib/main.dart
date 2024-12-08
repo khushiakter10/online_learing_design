@@ -9,6 +9,7 @@ import 'package:online_learing_design/view/meetup/meetup.dart';
 import 'package:online_learing_design/view/my_card/my_card.dart';
 import 'package:online_learing_design/view/my_courses/my_courses.dart';
 import 'package:online_learing_design/view/notifications/notifications.dart';
+import 'package:online_learing_design/view/payment_password/payment_password.dart';
 import 'package:online_learing_design/view/practice_page/practice_page.dart';
 import 'package:online_learing_design/view/product_design/product_design.dart';
 import 'package:online_learing_design/view/product_design_v1/product_design_v1.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyCard() ,
+      home: PaymentPassword() ,
     );
   }
 }
